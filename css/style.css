@@ -1,0 +1,45 @@
+input[type='submit'],
+button,
+[aria-label] {
+    cursor: pointer;
+}
+
+#spoiler {
+    display: none;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper_tbl{
+    margin-top: 40px;
+}
+
+table{
+    width: 600px;
+}
+th {
+    text-align: left;
+}
+button, input{
+    border: 1px solid indigo;
+    padding: 0px 10px;
+    font-size: 14px;
+    height: 40px;
+}
+button,
+input[type='submit'] {
+    width: 100px;
+    height: 40px;
+}
+form {
+    margin-top: 20px;
+}
+#error {
+    color: red;
+}
+
+
+

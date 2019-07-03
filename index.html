@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Names CRUD</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper_tbl">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+        </tr>
+        <tbody id="names">
+        </tbody>
+      </table>
+
+      <p id="counter"></p>
+      
+      <div id="spoiler" role="aria-hidden">
+        <form action="javascript:void(0);" method="POST" id="saveEdit">
+          <input type="text" id="edit-name">
+          <input type="number" id="edit-number">
+          <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
+      </div>
+      
+      
+      <span id="error"></span>
+      <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+        
+        <input type="text" id="add-name" placeholder="Add name" pattern="[A-Za-zА-Яа-яЁё]{1,50}">
+        <input  type="tel" 
+                id="add-number"  
+                minlength="7" 
+                maxlength="12" 
+                placeholder="Add number">
+        <input type="submit" value="Add">
+      </form>
+    </div>
+  </div>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
